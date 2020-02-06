@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/BooksEditor/static/css/main.b36544d1.chunk.css",
+    "main.js": "/BooksEditor/static/js/main.9cc85a7f.chunk.js",
+    "main.js.map": "/BooksEditor/static/js/main.9cc85a7f.chunk.js.map",
+    "runtime-main.js": "/BooksEditor/static/js/runtime-main.c496d11c.js",
+    "runtime-main.js.map": "/BooksEditor/static/js/runtime-main.c496d11c.js.map",
+    "static/css/2.47e06e2e.chunk.css": "/BooksEditor/static/css/2.47e06e2e.chunk.css",
+    "static/js/2.35d19996.chunk.js": "/BooksEditor/static/js/2.35d19996.chunk.js",
+    "static/js/2.35d19996.chunk.js.map": "/BooksEditor/static/js/2.35d19996.chunk.js.map",
+    "index.html": "/BooksEditor/index.html",
+    "precache-manifest.d1e35d41dd6a18335701d7ff4e5f034e.js": "/BooksEditor/precache-manifest.d1e35d41dd6a18335701d7ff4e5f034e.js",
+    "service-worker.js": "/BooksEditor/service-worker.js",
+    "static/css/2.47e06e2e.chunk.css.map": "/BooksEditor/static/css/2.47e06e2e.chunk.css.map",
+    "static/css/main.b36544d1.chunk.css.map": "/BooksEditor/static/css/main.b36544d1.chunk.css.map",
+    "static/js/2.35d19996.chunk.js.LICENSE.txt": "/BooksEditor/static/js/2.35d19996.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c496d11c.js",
+    "static/css/2.47e06e2e.chunk.css",
+    "static/js/2.35d19996.chunk.js",
+    "static/css/main.b36544d1.chunk.css",
+    "static/js/main.9cc85a7f.chunk.js"
+  ]
+}
