@@ -1,0 +1,12 @@
+.error {
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+}
+.helper {
+  font-size: 1rem;
+  color: blue;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}

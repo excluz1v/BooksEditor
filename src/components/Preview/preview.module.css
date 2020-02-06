@@ -1,0 +1,23 @@
+.main {
+  padding: 1.5rem;
+}
+.preview {
+  display: flex;
+  flex-direction: row;
+}
+.preview button {
+  height: 2rem;
+  margin: 1rem;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+}
+.info div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.img img {
+  height: 15rem;
+}
