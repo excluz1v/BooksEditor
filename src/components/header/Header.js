@@ -6,7 +6,7 @@ import { Add4Books, UpdateData, AddnewBooks, AddnewBooksISBN, Canceldata, Cancel
 
 let Header = (props) => {
     return (
-        <div className={`${styles.header} container`}>
+        <div className={`${styles.header} container-fluid`}>
             Редактор книг
             <div className='row'>
                 <div className='col-lg-6'>
