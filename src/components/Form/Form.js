@@ -37,21 +37,21 @@ let Form = (props) => {
               <Error touched={touched.bookTitle} message={errors.bookTitle}></Error>
             </div>
             <div className='row'>
-              <div className={`col-6 ${styles.firstName}`}>
+              <div className={`col-lg-6 col-12 ${styles.firstName}`}>
                 <label htmlFor='firstName'> Имя автора*</label>
                 <Field type='text' name='firstName' />
                 <Error touched={touched.firstName} message={errors.firstName}></Error>
               </div>
-              <div className={`col-6 ${styles.lastName}`} >
+              <div className={`col-lg-6 col-12 ${styles.lastName}`} >
                 <label htmlFor='lastName'>Фамилия автора*</label>
                 <Field type='text' name='lastName' />
                 <Error touched={touched.lastName} message={errors.lastName}></Error>
               </div>
             </div>
             <div className={styles.buttons}>
-              <div><button type='button' className="btn btn-secondary" onClick={() => { setAuthors(true) }}> Добавить авторов</button>
+              <div><button type='button' className="mr-1 btn-secondary" onClick={() => { setAuthors(true) }}> Добавить авторов</button>
               </div>
-              <div><button type='button' className="btn btn-secondary" onClick={() => { setAuthors(false) }}> Скрыть</button>
+              <div><button type='button' className="ml-1 btn-secondary" onClick={() => { setAuthors(false) }}> Скрыть</button>
               </div>
             </div>
 
@@ -88,16 +88,16 @@ let Form = (props) => {
               <Error touched={touched.date} message={errors.date}></Error>
             </div>
             <div className={styles.title}>
-              <label htmlFor='ISBN'>ISBN (13 значное уникальное число)</label>
+              <label htmlFor='ISBN'>ISBN (13 или 10 значное уникальное число)</label>
               <Field type='number' name='ISBN' />
               <Error touched={touched.ISBN} message={errors.ISBN}></Error>
             </div>
             <div className={styles.topButtons}>
               <div>
-                <button className='btn btn-success' type={"submit"} disabled={isSubmitting}>Сохранить</button>
+                <button className='btn-success' type={"submit"} disabled={isSubmitting}>Сохранить</button>
               </div>
               <div>
-                <button className='btn btn-danger' onClick={() => props.Canceldata()}>Отмена</button>
+                <button className='btn-danger' onClick={() => props.Canceldata()}>Отмена</button>
               </div>
             </div>
           </form >)}

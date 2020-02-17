@@ -1,33 +1,9 @@
+.menu h6 {
+  font-size: 0.5rem;
+}
 .list {
-  border: 1px black solid;
+  font-size: 0.5rem;
 }
-.img {
-  height: 100%;
-  width: 100%;
-}
-.card {
-  border: 2px black solid;
-  height: 20rem;
-  margin-top: 1rem;
-}
-.cardBody {
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
-.cardImg {
-  height: 10rem;
-  width: 100%;
-}
-
-.cardBody {
-  margin: 1rem auto;
-}
-.menu {
-  display: flex;
-  justify-content: flex-end;
-}
-.menu button {
-  height: 2rem;
-  margin-right: 2rem;
+.list li {
+  /* padding: 0; */
 }

@@ -6,12 +6,12 @@ import { Add4Books, UpdateData, AddnewBooks, AddnewBooksISBN, Canceldata, Cancel
 
 let Header = (props) => {
     return (
-        <div className={`${styles.header} + ' ' + "container"`}>
+        <div className={`${styles.header} container`}>
             Редактор книг
             <div className='row'>
-                <div className='col-6'>
+                <div className='col-lg-6'>
                 </div>
-                <div className='col-6'>
+                <div className='col-6 col-12'>
                     <div className={styles.menu}>
                         <div><button className="btn btn-info" onClick={() => { props.Add4Books() }}> добавить 4 книги по умолчанию</button></div>
                         <div><button className="btn btn-info" onClick={() => { props.AddnewBooks(true); props.CancelISBN(false) }}> Добавить новую книгу вручную</button></div>

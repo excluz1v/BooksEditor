@@ -3,33 +3,33 @@ import style from "./List.module.css";
 
 let List = props => {
   return (
-    <div className={`${style.list} col-6`}>
-      <div className={style.menu}>
-        <div>
+    <div className="col-6">
+      {props.books.books.length > 1 ? (
+        <div className={style.menu}>
           <button
-            className="btn btn-success"
+            className=" bg-dark text-light "
             type="button"
             onClick={() => props.filterByTitle()}
           >
-            сортировка по названию
+            <h6>сортировка по названию</h6>
           </button>
-        </div>
-        <div>
           <button
-            className="btn btn-success"
+            className=" bg-dark text-light "
             type="button"
             onClick={() => props.filterByDate()}
           >
-            сортировка по дате
+            <h6>сортировка по дате</h6>
           </button>
         </div>
-      </div>
-      <div className="row">
+      ) : (
+        undefined
+      )}
+      <div className={`row ${style.list}`}>
         {props.books.books.length > 0
           ? props.books.books.map(el => {
               return (
                 <div
-                  className="col-4"
+                  className="col-12"
                   onClick={() => {
                     props.BooksIsPicked(el);
                     props.CancelISBN(false);
@@ -37,18 +37,12 @@ let List = props => {
                   }}
                   key={el.id}
                 >
-                  <div className={style.card}>
-                    <div className={style.cardImg}>
-                      {" "}
-                      <img className={style.img} src={el.img || null} alt="" />
-                    </div>
-                    <div className={style.cardBody}>
-                      <h5 className="card-title">{el.bookTitle}</h5>
-                    </div>
-                    <div className={style.cardBody}>
+                  <ul className="list-group">
+                    <li className="list-group-item">
+                      <strong>"{el.bookTitle}" </strong>
                       {el.firstName + " " + el.lastName + " " + el.date}
-                    </div>
-                  </div>
+                    </li>
+                  </ul>
                 </div>
               );
             })

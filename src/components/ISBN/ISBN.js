@@ -51,19 +51,20 @@ let ISBN = (props) => {
             >
                 {({ isSubmitting, handleSubmit, errors, touched }) =>
                     (
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} className={styles.form}>
                             <div className='form-group'>
                                 <label htmlFor="isbnNumber">ISBN*</label>
-                                <Field type='number' name='isbnNumber' className='form-control' />
-                                <small className="form-text text-muted">13 значное число без пробелов и -</small>
+                                <Field type='number' name='isbnNumber' />
+                                <small className="form-text text-muted">13 или 10 значное число без пробелов и -</small>
                                 <div className={styles.buttons}>
-                                    <button type={"submit"} disabled={isSubmitting} className='btn btn-success'>Добавить</button>
-                                    <button type={"button"} onClick={() => { props.CancelISBN(false) }} disabled={isSubmitting} className='btn btn-danger'>Отмена</button>
+                                    <button type={"submit"} disabled={isSubmitting} className=' btn-success '>Добавить</button>
+                                    <button type={"button"} onClick={() => { props.CancelISBN(false) }} disabled={isSubmitting} className='btn-danger'>Отмена</button>
                                 </div>
 
                                 {touched && errors ?
                                     <div className={styles.error}>{errors.isbnNumber}</div > : undefined}
-                                <a href='https://openlibrary.org/' target="_blank"> номера книг можно посмотреть тут</a>
+                                <br />
+                                <a href='https://openlibrary.org/' target="_blank" > номера книг можно посмотреть тут</a>
 
                             </div>
 
@@ -75,5 +76,7 @@ let ISBN = (props) => {
         </div >
     )
 }
+
+Axios.get(`https://openlibrary.org/api/books?bibkeys=ISBN:1609422635&jscmd=data&format=json`).then(response => { console.log(response) })
 
 export default ISBN

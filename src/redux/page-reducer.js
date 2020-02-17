@@ -134,9 +134,7 @@ export const Add4Books = (data = books) => {
 export const UpdateData = (data) => {
     return ({ type: 'UpdateData', data })
 }
-// export const UpdateData = (data = infoFromLocal()) => {
-//     return ({ type: 'UpdateData', data })
-// }
+
 export const AddnewBooksISBN = (boolean) => {
     return ({ type: 'AddnewBooksISBN', boolean })
 }

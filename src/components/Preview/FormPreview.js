@@ -27,7 +27,7 @@ let FormPreview = (props) => {
           props.editModePreview(false)
         }}
       >
-        {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) =>
+        {({ values, errors, touched, handleSubmit, isSubmitting }) =>
           (<form onSubmit={handleSubmit}>
 
             <label htmlFor='bookTitle'> Название книги*</label>
@@ -48,9 +48,9 @@ let FormPreview = (props) => {
               </div>
             </div>
             <div className={styles.buttons}>
-              <div><button type='button' className="btn btn-secondary" onClick={() => { setAdditionalAuthor(true) }}> Добавить авторов</button>
+              <div><button type='button' className=" btn-secondary" onClick={() => { setAdditionalAuthor(true) }}> Добавить авторов</button>
               </div>
-              <div><button type='button' className="btn btn-secondary" onClick={() => { setAdditionalAuthor(false) }}> Закрыть</button>
+              <div><button type='button' className=" btn-secondary" onClick={() => { setAdditionalAuthor(false) }}> Закрыть</button>
               </div>
             </div>
             {additionalAuthor ?
@@ -91,10 +91,10 @@ let FormPreview = (props) => {
             </div>
             <div className={styles.topButtons}>
               <div>
-                <button className='btn btn-success' type={"submit"} disabled={isSubmitting}>Сохранить</button>
+                <button className='btn-success' type={"submit"} disabled={isSubmitting}>Сохранить</button>
               </div>
               <div>
-                <button className='btn btn-danger' type={"button"} onClick={() => {
+                <button className='btn-danger' type={"button"} onClick={() => {
                   setAdditionalAuthor(false)
                   props.editModePreview(false);
                   // props.ReSavedData()
